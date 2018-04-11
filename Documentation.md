@@ -16,6 +16,7 @@ The line tftp-root=/var/lib/tftpboot Specifies the root directory for files serv
 
 The last step I completed was creating a firewall using the iptables command, specifically:
 iptables -I INPUT -i eth1 -p udp --dport 67:68 --sport 67:68 -j ACCEPT (for DHCP)
+
 iptables -I INPUT -i eth1 -p udp --dport 69 -j ACCEPT (for TFTP)
 
 I then installed the iptables-persistent package to make these rules persist on machine startup.
