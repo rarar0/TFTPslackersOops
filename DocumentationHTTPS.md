@@ -23,6 +23,9 @@ sudo iptables -I INPUT -i eth0 -p udp --dport 443 -j ACCEPT
 ```
 Note that the "-i eth0" command is not required
 
+You can list all iptable rules with ```sudo iptables -L```
+
+
 3)Run certbot and insert the domain you wish to get an SSL cert for
 
 ```
