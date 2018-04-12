@@ -38,7 +38,6 @@ sudo systemctl restart apache2
 ```
 sudo systemctl status apache2
 ```
-If apache cannot restart, try using ``` systemctl kill apache2 ``` to kill apache completely
 
 And that should be it! The certbot will give you a link to ssllabs allowing you to check and see if you have a working
 SSL certificate!
